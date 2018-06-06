@@ -4,17 +4,17 @@ var client = new net.Socket();
 
 // my sql
 var con = mysql.createConnection({
-	host: "sql11.freesqldatabase.com",
-	user: "sql11224171",
-	password: "aJQMZId8vm",
-	database: "sql11224171"
+	host: "db4free.net",
+	user: "saifal",
+	password: "saifal@123",
+	database: "saifal123"
 });
 con.connect(function (err) {
 	if (err) throw err;
 	console.log("DB Connected!");
 });
 //
-client.connect(1337, 'localhost', function () {
+client.connect(2222, 'localhost', function () {
 	console.log('Connected');
 	client.write('Hello, server! Love, Client.');
 });
